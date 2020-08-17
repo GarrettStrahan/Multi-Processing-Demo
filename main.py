@@ -14,8 +14,8 @@ def calc_cube(numbers):
 
 if __name__	 == "__main__":
 	arr = [2,3,8,9]
-	p1 = multiprocessing.Process(target=calc_square, args=(arr,)) #the reason that we are using (arr,)) is because the arguement is a tuple. The line of code is setting a process 1 to do calculating the square root.
-	p2 = multiprocessing.Process(target=calc_cube, args=(arr,)) #this line is doing process #2 to do calculating cubed
+	p1 = multiprocessing.Process(target=calc_square, args=(arr,)) #The line of code is setting a process 1 to do calculating the square root math equation.
+	p2 = multiprocessing.Process(target=calc_cube, args=(arr,)) #this line is doing process #2 to do calculating cubed math equation.
 
 
 	p1.start()
